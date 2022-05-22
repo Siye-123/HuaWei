@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>华为登录页面</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="./login.css">
+        <link rel="stylesheet" href="./footer.css">
+    </head>
+    <body>
+        <div class="login-top">
+            <img src="../img/HUAWEIlogo.svg">
+            <div class="login-top-text">
+                <span class="login-top-line">|</span>
+                <span class="login-top-title">华为商城</span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="card">
+                <span class="card-title">华为账号登录</span>
+                <div class="card-area">
+                    <div class="card-area-l">
+                        <div class="card-area-l-code"></div>
+                        <span>若您使用华为手机，请进入“设置”>“华为帐号”扫码登录</span>
+                    </div>
+                    <div class="card-area-line"></div>
+                    <div class="card-area-r">
+                        <form method="post" action="" onsubmit="returnsubmitTest">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div id="change_margin_1">
+                                            <input class="user" type="text" placeholder="手机号/邮件地址/账号名" name="user" onblur="oBlur_1()" onfocus="oFocus_1()">
+                                        </div>
+                                        <!-- input的value为空时弹出提醒 -->
+                                        <p id="remind_1"></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div id="change_margin_2">
+                                            <input class="password" type="password" name="password" placeholder="密码" onblur="oBlur_2()" onfocus="oFocus_2()">
+                                        </div>
+                                        <!-- input的value为空时弹出提醒 -->
+                                        <p id="remind_2"></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="card-form-text"><a href="#">短信验证码登录</a></span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div id="change_margin_3">
+                                            <input class="btn" type="button" value="登录">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="card-area-others">
+                                            <a href="../register/register-phone.html">注册</a>
+                                            <span></span>
+                                            <a href="#">忘记密码</a>
+                                            <span></span>
+                                            <a href="#">遇到问题</a>
+                                        </div>
+                                        <div class="card-area-icon">
+                                            <a href="#"><div class="login-icon-Q"></div></a>
+                                            <a href="#"><div class="login-icon-Z"></div></a>
+                                            <a href="#"><div class="login-icon-W"></div></a>  
+                                        </div>
+                                    </td>
+                                </tr>                               
+                            </table>
+                        </form>
+                    </div>
+                </div> 
+            </div>
+            <div class="footer">
+                <div class="footer-top">
+                    <ul>
+                        <li>
+                            <a  href="#">
+                                华为账号用户协议
+                            </a>
+                            &#124
+                        </li>
+                        <li>
+                            <a href="#">
+                                关于华为账号与隐私的声明
+                            </a>
+                            &#124
+                            
+                        </li>
+                        <li>
+                            <a href="#">
+                                常见问题  
+                            </a>
+                            &#124
+                        </li>
+                        <li>
+                            <a href="#">
+                                Cookies
+                            </a>
+                            
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-text">华为账号&nbsp版权所有&copy 2011-2021</div> 
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+    // 全局变量a和b，分别获取用户框和密码框的value值
+var a = document.getElementsByTagName("input")[0].value;
+var a_obj = document.getElementsByTagName("input")[0];
+var b = document.getElementsByTagName("input")[1].value;
+var b_obj = document.getElementsByTagName("input")[1];
+
+//用户框失去焦点后验证value值
+function oBlur_1() {
+if (!a_obj.value) { //用户框value值为空
+document.getElementById("remind_1").innerHTML = "请输入用户名!";
+document.getElementById("change_margin_1").style.marginBottom = 1 + "px";
+} else { //用户框value值不为空
+document.getElementById("remind_1").innerHTML = " ";
+document.getElementById("change_margin_1").style.marginBottom = 19 + "px";
+}
+}
+
+//密码框失去焦点后验证value值
+function oBlur_2() {
+
+if (!b_obj.value) { //密码框value值为空
+document.getElementById("remind_2").innerHTML = "请输入密码!";
+document.getElementById("change_margin_2").style.marginBottom = 1 + "px";
+document.getElementById("change_margin_3").style.marginTop = 2 + "px";
+} else { //密码框value值不为空
+document.getElementById("remind_2").innerHTML = " ";
+document.getElementById("change_margin_2").style.marginBottom = 19 + "px";
+document.getElementById("change_margin_3").style.marginTop = 19 + "px";
+}
+}
+
+//用户框获得焦点的隐藏提醒
+function oFocus_1() {
+document.getElementById("remind_1").innerHTML = " ";
+document.getElementById("change_margin_1").style.marginBottom = 19 + "px";
+}
+
+//密码框获得焦点的隐藏提醒
+function oFocus_2() {
+document.getElementById("remind_2").innerHTML = " ";
+document.getElementById("change_margin_2").style.marginBottom = 19 + "px";
+document.getElementById("change_margin_3").style.marginTop = 19 + "px";
+}
+
+//若输入框为空，阻止表单的提交
+function submitTest() {
+if (!a_obj.value && !b_obj.value) { //用户框value值和密码框value值都为空
+document.getElementById("remind_1").innerHTML = "请输入用户名!";
+document.getElementById("change_margin_1").style.marginBottom = 1 + "px";
+document.getElementById("remind_2").innerHTML = "请输入密码!";
+document.getElementById("change_margin_2").style.marginBottom = 1 + "px";
+document.getElementById("change_margin_3").style.marginTop = 2 + "px";
+return false; //只有返回true表单才会提交
+} else if (!a_obj.value) { //用户框value值为空
+document.getElementById("remind_1").innerHTML = "请输入用户名!";
+document.getElementById("change_margin_1").style.marginBottom = 1 + "px";
+return false;
+} else if (!b_obj.value) { //密码框value值为空
+document.getElementById("remind_2").innerHTML = "请输入密码!";
+document.getElementById("change_margin_2").style.marginBottom = 1 + "px";
+document.getElementById("change_margin_3").style.marginTop = 2 + "px";
+return false;
+}
+}
+</script>

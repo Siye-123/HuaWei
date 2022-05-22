@@ -1,0 +1,204 @@
+body{
+    margin:0;
+    
+}
+
+.login-top{
+    background-color:#f1f1f1;
+    height:38.4px;
+}
+.login-top img{
+    margin:6px 6.4px auto 274.6px; 
+    width:92.53px;
+    height:24px;
+    float: left;
+}
+.login-top-text{
+    padding:6.8px;
+    box-sizing: border-box;
+    float: left;
+}
+.login-top-line {
+    color:rgb(199, 197, 197);
+    height:5px;
+    margin-right: 8px;
+}
+.login-top-title{
+    display: inline-block;
+    font-size:12.8px;
+    color:#191919;
+    font-weight: 700;
+    font-family:"Microsoft Yahei,STHeiti,Simsun,STSong,Helvetica Neue,Helvetica,Arial,sans-serif";
+}
+.card-title{
+    display: flex;
+    justify-content: center;
+    padding:80px 0 64px 0;
+    height:33.271px;
+    font-size: 25.6px;
+}
+.card-area{
+    display: flex;
+    justify-content: center;
+}
+.card-area-l{
+    width:288px;
+    height:234px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+    align-items: center;
+}
+.card-area-l-code{
+    border-radius: 6.4px;
+    border:16px solid #F7F7F7;
+    background-image: url(../img/code.png);
+    width:128px;
+    height:128px;
+}
+.card-area-l span{
+    font-size: 9.6px;
+    font-family: Microsoft Yahei,STHeiti,Simsun,STSong,Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-align: left;
+    color: rgba(0,0,0,.6);
+}
+
+
+.card-area-line{
+    border:0.5px solid darkgrey;
+    height:240px;
+    margin:0 48px;
+}
+.card-area-r{
+    margin-left: 0px;
+}
+.card-area-r input{
+    width:250px;
+    height:40px;
+    background: rgb(243, 241, 241);
+    border-radius:10px ;
+    border:none;
+}
+.card-area-r input:focus{
+        border:1px solid rgb(0, 140, 255);
+        border-radius:6.4px ;
+        outline: none;
+}
+.input01{
+    margin-bottom: 20.8px;
+}
+.card-form-text a{
+    color: #007dff;
+    line-height: 1.3;
+    text-decoration: none;
+    font-size: 11.200000000000001px;
+    padding-top: 12.8px;
+}
+.card-form-text a:hover{
+    color:rgb(10, 100, 160);
+}
+.card-area-r .btn{
+    margin-top: 32px;
+    background-color:#ca141d4b;
+    border:none;
+    border-radius: 6.4px;
+    color: #d6e2f9!important;
+}
+.btn:hover{
+    background-color:#CA141D;
+    border:none;
+}
+.btn:focus{
+    display: none;
+}
+.card-area-others{
+    padding:20px;
+    display: flex;
+    justify-content: center;
+}
+.card-area-others a{
+    color: #007dff;
+    padding:0 12px;
+    font-size: 12.8px;
+    line-height: 1.3;
+    text-decoration: none;
+}
+.card-area-others a:hover{
+    color:rgb(10, 100, 160);
+}
+.card-area-others span{
+    background: rgba(0,0,0,0.1);
+    padding-top: 2.4px;
+    height:12.8px;
+    width:1px;
+}
+
+.card-area-icon{
+    display:flex;
+    flex-direction: row;;
+    height:32px;
+    justify-content: space-between;
+}
+.card-area-icon div {
+    margin:0 20px;
+}
+
+
+.login-icon-Q{
+    width:32px;
+    height:32px;
+    border-radius: 50;
+    background-image: url(../img/loginQ.svg);
+    background-size: 32px;
+    background-repeat:no-repeat; 
+}
+.login-icon-Z{
+    width:32px;
+    height:32px;
+    border-radius: 50;
+    background-image: url(../img/loginZ.svg);
+    background-size: 32px;
+    background-repeat:no-repeat; 
+}
+.login-icon-W {
+    width:32px;
+    height:32px;
+    border-radius: 50;
+    background-image: url(../img/loginW.svg);
+    background-size: 32px;
+    background-repeat:no-repeat; 
+}
+.login-icon-Q:hover{
+    width:32px;
+    height:32px;
+    border-radius: 50;
+    background-image: url(../img/loginQ_hover.svg);
+    background-size: 32px;
+    background-repeat:no-repeat; 
+}
+.login-icon-Z:hover{
+    width:32px;
+    height:32px;
+    border-radius: 50;
+    background-image: url(../img/loginZ_hover.svg);
+    background-size: 32px;
+    background-repeat:no-repeat; 
+}
+.login-icon-W:hover {
+    width:32px;
+    height:32px;
+    border-radius: 50;
+    background-image: url(../img/loginW_hover.png);
+    background-size: 32px;
+    background-repeat:no-repeat; 
+}
+
+
+#remind_1,#remind_2{
+    width:76%;
+    margin:0 auto 2px;
+    text-align: left;
+    font-size: .2em;
+    color:#f00;
+}
+

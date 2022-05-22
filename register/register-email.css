@@ -1,0 +1,330 @@
+body{
+    margin:0;
+    display: block;
+    align-items:  center;
+
+
+}
+.content{
+    width:793px;
+    height:620px;
+    margin: 0 auto;
+}
+.loginTop{
+    display:flex;
+    background-color:silver;
+    height:38.396px;
+}
+.login-top{
+    width:796px;
+    height:38.396px;
+    margin:0 auto;
+}
+
+#loginlogo{
+    width:80px;
+    height:38.396px;
+}
+.registerTop{
+    background: darkgray;
+}
+
+.phone{ width:192px;
+        height:41px;
+        background:#fff;
+        margin-top: 64px;
+        border-radius:6.4px;
+        display:flex;
+        padding:12.8px 25.6px;
+        box-sizing: border-box;
+        align-items: center;
+}
+.phone span{
+    display: inline-block;
+    line-height: 1.3px;
+
+}
+.phone:hover{
+    background-color: #d6e2f9;
+}
+.registerLeft img{
+    height:12.8px;
+    width:12.8px;
+}
+a{
+    text-decoration: none;
+}
+.registerLeft span{ 
+    margin-left: 12px;
+    display:inline-block;
+    color:black;
+    font-size: 6px;
+    font-family: ' Microsoft Yahei,STHeiti,Simsun,STSong,Helvetica Neue,Helvetica,Arial,sans-serif';
+    text-decoration: none;
+    }
+.email {width:192px;
+        height:41px;
+        background:rgba(0,0,0,.05);
+        border-radius: 6.4px;
+        display:flex;
+        display:flex;
+        padding:12.8px 25.6px;
+        box-sizing: border-box;
+        align-items: center;
+}
+.email:hover{
+    background-color: #d6e2f9;
+}
+
+table{
+    margin-left: 250px;
+    margin-top:-130px;
+}
+.register-right-top{
+    width:352px;
+    height:60.868px;
+    margin:50px auto 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.register-right-title{ 
+    font-size: 25.6px;
+    font-family: Microsoft Yahei,STHeiti,Simsun,STSong,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.register-right-text{
+    font-size: 11.200000000000001px;
+    font-family: Microsoft Yahei,STHeiti,Simsun,STSong,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.register-right-login{
+    color:#007dff;
+    font-family: Microsoft Yahei,STHeiti,Simsun,STSong,Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-decoration: none;
+}
+
+table input {
+    width:350px;
+    height:40px;
+    background-color: rgba(0,0,0,.05);   
+    border-radius:9.6px;
+    margin-bottom: 25.6px;
+    border:none;
+    font-size: 11.2px;
+    padding:0 12px;
+}
+table input:focus{
+        border:1px solid rgb(0, 140, 255);
+        border-radius:6.4px ;
+        outline: none;
+}
+.registerArea{
+    width:352px;
+    height:38.8px;
+    background-color: rgba(0,0,0,.05);   
+    border-radius:9.6px;
+    margin-bottom: 25.6px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 12.8px;
+    box-sizing: border-box;
+    font-family: Microsoft Yahei,STHeiti,Simsun,STSong,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 11.2px;
+}
+.registerArea:hover {
+    border: 1px solid rgb(0, 140, 255);
+}
+
+.registerArea-text{
+    width:45px;
+    height:38.8px;
+    background-color: unset;
+    border:none;
+}
+
+.verify{
+    width:352px;
+    height:38.8px;
+    background-color: rgba(0,0,0,.05);   
+    border-radius:9.6px;
+    margin-bottom: 25.6px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 12.8px;
+    box-sizing: border-box;
+    font-family: Microsoft Yahei,STHeiti,Simsun,STSong,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 11.2px;
+
+}
+.verifyCode{
+    width:300.4px;
+    height:34.4px;
+    margin:0;
+    border:none;
+    background-color: unset;
+    padding:0;
+}
+.verify:hover {
+    border: 1px solid rgb(0, 140, 255);
+}
+.verifyCode:focus{
+    border:none;
+}
+
+.verifyCode-text{
+    width:72.8px;
+    height:15.6px;
+    color: #007dff;
+    font-size: 11.2px;
+}
+.verifyCode-text a{
+    text-decoration: none;
+}
+
+.register-btn{
+    width:352px;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-submit{
+    width:221.194px;
+    height:38.4px;
+    background:#ca141d4b;
+    border:none;
+    border-radius: 6.4px;
+    color: #d6e2f9!important;
+    margin:0;
+}
+.register-submit:focus{
+    background-color:#CA141D;
+    border:none;
+}
+.registerB{
+    width:350px;
+    height:40px;
+    background-color: rgba(0,0,0,.05);   
+    border-radius:9.6px;
+    padding: 0 12.8px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25.6px;
+}
+.registerB > span{
+    display:inline-block;
+    color:#333;
+    font-size: 11.2px;
+}
+.registerBir-date{
+    width:176px;
+    height:44.8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:0;
+    position: relative;
+}
+
+#years,#months,#days{
+    margin-top:0;
+    font-size: 11.2px;
+}
+
+
+.years-hidden div,.months-hidden div,.days-hidden div{
+    width:80px;
+    height:6px;
+    border: 1px solid rgba(0,0,0,.05);
+    text-align: left;
+    padding:10px;
+    margin:0px;
+    font-size: 11.2px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.years-hidden div:hover ,.months-hidden div:hover ,.days-hidden div:hover{
+    background-color: #d6e2f9;
+}
+.years-hidden,.months-hidden,.days-hidden{
+    overflow-x:hidden;
+    height:100px;
+    width:80px;
+    border:1px solid rgba(0,0,0,.05);
+    margin:6.4px;
+    display: none;
+    position: absolute;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.years-hidden {
+    top: 30px;
+    left: -30px;
+}
+
+.months-hidden {
+    top: 30px;
+    left: 40px;
+}
+
+.days-hidden {
+    top: 30px;
+    left: 100px;
+}
+
+.footer-top ul{
+    margin: 0;
+}
+
+#change_margin_emailNum{
+    position:relative; 
+    height:40px;
+    margin-bottom: 25.6px;
+}
+#change_margin_pwd{
+    position:relative; 
+    height:40px;
+    margin-bottom: 25.6px;
+}
+#change_margin_repwd{
+    position:relative; 
+    height:40px;
+    margin-bottom: 25.6px;
+}
+
+#remind_emailNum{
+    position: absolute;
+    text-align: left;
+    font-size: .2em;
+    color:#f00;
+    top:300px;
+    right:500px;
+}
+#remind_pwd{
+    text-align: left;
+    font-size: .2em;
+    color:#f00;
+    position: absolute;
+    top: 430px;
+    right: 500px;
+    margin-bottom: 0px;
+}
+#remind_repwd{
+    text-align: left;
+    font-size: .2em;
+    color:#f00;
+    position: absolute;
+    top: 500px;
+    right: 500px;
+    margin-bottom: 0px;
+}

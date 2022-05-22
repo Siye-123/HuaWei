@@ -1,0 +1,45 @@
+.footer{
+    background-color: gainsboro;
+    height:82px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content:space-evenly;
+    position: fixed;
+    bottom: 0px;
+}
+.footer a:hover{
+    color:#383838;
+    text-decoration: none;
+}
+.footer-top{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin:0 8px;
+}
+.footer-top a {
+    font:normal 0 10px 'Microsoft Yahei';
+    text-decoration:none;
+    color:rgb(148, 143, 143);
+    }
+
+.footer-text{
+    display: flex;
+    justify-content: center;
+    font-family:   Microsoft Yahei,STHeiti,Simsun,STSong,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size:11.2px;
+    color:#00000034;
+}
+ul{
+    margin: 0;
+}
+li{ list-style: none;
+    display:inline-block;
+    font-size: 9.600000000000001px;
+    font-family: Microsoft Yahei,STHeiti,Simsun,STSong,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color:rgba(0,0,0,.6); 
+}
+
+
+
